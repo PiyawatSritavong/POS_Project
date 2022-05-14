@@ -1,61 +1,36 @@
 <?php require views_path('partials/header');?>
-	<style>
-		
-		.hide{
-			display: none;
-		}
-
-		@keyframes appear{
-
-			0%{opacity: 0;transform: translateY(-100px);}
-			100%{opacity: 1;transform: translateY(0px);}
-		}
-
-		.checkout-box{
-			font-size:30px;
-		}
-
-		.checkout-box span{
-			float: right;
-		}
-
-		.search-bar{
-			width: 80%;
-		}
-
-		.search-bar p{
-			width: 100px;
-		}
-
-	</style>
-
-	<div class="shadow-sm row">
+<div class="bg-success text-white">
+	<div class="row justify-content-between">
+		<div class="col-2">
+			<h1 class="px-4 pt-3">ไจ๊เฮงร้อยเอ็ด</h1>
+		</div>
+		<div class="d-flex col-2 pt-3 justify-content-between">
+			<h3>User</h3>
+			<h3 class="px-5">Logout</h3>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<!-- <div class="shadow-sm row">
 		<div class="col">
 			<div class="input-group search-bar">
-				<p>BarCode</p>:
 				<input onkeyup="check_for_enter_key(event)" oninput="search_item(event)" type="text" class="ms-4 form-control js-search" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" >
 				<span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
 			</div>
 			
-			<div class="input-group search-bar">
-				<p>UserName</p>:
-				<input onkeyup="check_for_enter_key(event)" oninput="search_item(event)" type="text" class="ms-4 form-control js-search" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" >
-				<span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
-			</div>
 		</div>
 		<div class="col">
 			<button class="btn btn-success my-2 w-50 py-4" style="float:right;" onclick="clearAll()">พิมพ์ใบเสร็จ</button>
 		</div>
-	</div>
+	</div> -->
 
-	<div class="d-flex">
-		<div style="min-height:600px;" class="shadow-sm col-7 p-4">
+	<div class="row">
+		<div class="col">
 			
-			<!-- <div class="input-group mb-3">
-				<h3> Items </h3>
+			<div class="input-group mb-3">
 				<input onkeyup="check_for_enter_key(event)" oninput="search_item(event)" type="text" class="ms-4 form-control js-search" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" autofocus>
 				<span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
-			</div> -->
+			</div>
 
 			<div class="table-responsive" style="height:400px;overflow-y: scroll;">
 				<table class="table table-striped table-hover">
@@ -70,31 +45,31 @@
 				</table>
 			</div>
 						
-			<div onclick="add_item(event)" class="js-products d-flex" style="flex-wrap: wrap;height: 90%;overflow-y: scroll;">
+			<div onclick="add_item(event)" class="js-products d-flex" style="flex-wrap: wrap;;overflow-y: scroll;">
 			
 			</div>
 			
 		</div>
 		
-		<div class="col-5 shadow-sm p-4 pt-2">
+		<div class="col-3 p-4 bg-secondary text-white">
 			
-			<div><center><h3>Cart <div class="js-item-count badge bg-primary rounded-circle">0</div></h3></center></div>
+			<!-- <div><center><h3>Cart <div class="js-item-count badge bg-primary rounded-circle">0</div></h3></center></div> -->
 			
 
-			<div class="alert alert-danger checkout-box">ราคารวม: <span class="js-gtotal">$0.00</span></div>
-			<div class="alert alert-danger checkout-box">รับเงินลูกค้า: 
+			<div class="m-4">ราคารวม: <span class="js-gtotal">$0.00</span></div>
+			<div class="m-4">รับเงินลูกค้า: 
 				<span>
 					<input type="number" id="pay" placeholder="Enter amount paid">
 				</span>
 			</div>
-			<div class="alert alert-danger checkout-box">เงินทอน: 
+			<div class="m-4">เงินทอน: 
 				<span id="results">
 					$0.00
 				</span>
 			</div>
-			<div class="alert alert-danger checkout-box">จำนวนสินค้า: <span class="items_total">0</span></div>
-			<div class="alert alert-danger checkout-box">ส่วนลด: <span>$0.00</span></div>
-			<div class="alert alert-danger checkout-box">ภาษี: <span>$0.00</span></div>
+			<div class="m-4">จำนวนสินค้า: <span class="items_total">0</span></div>
+			<div class="m-4">ส่วนลด: <span>$0.00</span></div>
+			<div class="m-4">ภาษี: <span>$0.00</span></div>
 			<div>
 				<button class="btn btn-success my-2 w-100 py-4" onclick='cal()'>Checkout</button>
 				<div class="d-flex">
@@ -315,8 +290,8 @@
 	function refresh_items_display()
 	{
 
-		var item_count = document.querySelector(".js-item-count");
-		item_count.innerHTML = ITEMS.length;
+		/* var item_count = document.querySelector(".js-item-count");
+		item_count.innerHTML = ITEMS.length; */
 		
 		var items_div = document.querySelector(".js-items");
 		items_div.innerHTML = "";
