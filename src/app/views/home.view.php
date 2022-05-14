@@ -1,4 +1,5 @@
 <?php require views_path('partials/header');?>
+<<<<<<< Updated upstream
 <div class="bg-success text-white">
 	<div class="row justify-content-between">
 		<div class="col-2">
@@ -12,6 +13,10 @@
 </div>
 <div class="container-fluid">
 	<!-- <div class="shadow-sm row">
+=======
+	
+	<div class="shadow-sm row">
+>>>>>>> Stashed changes
 		<div class="col">
 			<div class="input-group search-bar">
 				<input onkeyup="check_for_enter_key(event)" oninput="search_item(event)" type="text" class="ms-4 form-control js-search" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" >
