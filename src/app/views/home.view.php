@@ -2,11 +2,11 @@
 <div class="bg-success text-white">
 	<div class="row justify-content-between">
 		<div class="col-2">
-			<h1 class="px-4 pt-3">ไจ๊เฮงร้อยเอ็ด</h1>
+			<h1 class="px-3 pt-2">ไจ๊เฮงร้อยเอ็ด</h1>
 		</div>
 		<div class="d-flex col-2 pt-3 justify-content-between">
 			<h3>User</h3>
-			<h3 class="px-5">Logout</h3>
+			<h3 class="px-4">Logout</h3>
 		</div>
 	</div>
 </div>
@@ -28,8 +28,9 @@
 		<div class="col">
 			
 			<div class="input-group mb-3">
+			<span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
 				<input onkeyup="check_for_enter_key(event)" oninput="search_item(event)" type="text" class="ms-4 form-control js-search" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1" autofocus>
-				<span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+				
 			</div>
 
 			<div class="table-responsive" style="height:400px;overflow-y: scroll;">
@@ -51,7 +52,7 @@
 			
 		</div>
 		
-		<div class="col-3 p-4 bg-secondary text-white">
+		<div class="col-3 p-2 bg-secondary text-white">
 			
 			<!-- <div><center><h3>Cart <div class="js-item-count badge bg-primary rounded-circle">0</div></h3></center></div> -->
 			
