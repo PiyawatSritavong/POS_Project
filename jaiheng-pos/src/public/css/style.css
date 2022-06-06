@@ -1,0 +1,129 @@
+.imgg {
+    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+  }
+.img {
+    margin-top: -120px;
+    width: 250px;
+    height: 250px;
+  }
+
+  button {
+    margin-top : 50px;
+    margin-right: 75px;
+    margin-left: 75px;
+    width :325.18px ;
+    height :162.59px ;
+    padding: 50px;
+    font-weight: 400;
+    font-size: 48px;
+    color: #000000;
+    background: #F2BA44;
+    border: none;
+    border-radius: 30px;
+  }
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.button:hover span {
+    padding-right: 25px;
+  }
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.button1 {
+    margin-top : 40px;
+    margin-right: 75px;
+    margin-left: 75px;
+    width :200px ;
+    height :100px ;
+    font-weight: 400;
+    font-size: 32px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
+    color: #000000;
+    background: #F2BA44;
+    border: none;
+    border-radius: 50px;
+    line-height: -1.9;
+  }
+  
+.button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.button1 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.button1:hover span {
+    padding-right: 25px;
+  }
+  
+.button1:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+form {
+  
+    width: 700px;
+    height: 430px;
+    margin-top: 7%;
+      margin: 1 auto;
+      padding: 20px;
+      border: 1px solid #C4C4C4;
+      background: #D7D7D7;
+      border-radius: 0px 0px 10px 10px;
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  }
+ 
+
+  .input-group {
+      
+      margin: 20px 0px 50px 0px;
+  }
+  
+  .s{
+    box-sizing: border-box;   
+   
+    padding: 12px 20px 12px 20px;
+  }
+  .input-group input {
+      
+      width: 601px;
+      height: 70px; 
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-size: 32px;
+      background-position: "icon_login.png";
+      border: 1px solid #C4C4C4;
+      background: #C4C4C4;
+      
+   
+  
+  }
