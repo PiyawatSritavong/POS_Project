@@ -168,50 +168,28 @@
                 </div>
                 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                     <table class="table table-hover">
-                        <thead>
-                            <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
+                        <div style="margin: 5%;">
+                            <h2 class="text-center">BARCODE GENERATOR</h2>
+                            <form class="form-horizontal" method="post" action="barcode.php" target="_blank">                   
+                                <div class="form-group" style="margin-top: 2%;">
+                                    <label class="control-label col-sm-2" for="product_id">Price:</label>
+                                <div class="col-sm-10">
+                                    <input autocomplete="OFF" type="text" class="form-control" id="product_id" name="product_id">
+                                </div>
+                                </div>                                
+                                <div class="form-group" style="margin-top: 2%;">
+                                    <label class="control-label col-sm-2" for="print_qty">Barcode Quantity</label>
+                                <div class="col-sm-10">          
+                                    <input autocomplete="OFF" type="print_qty" class="form-control" id="print_qty"  name="print_qty">
+                                </div>
+                                </div>
+                                <div class="form-group" style="margin-top: 2%;">        
+                                <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                                </div>
+                            </form>
+                        </div>
                     </table>
                 </div>
             </div>
