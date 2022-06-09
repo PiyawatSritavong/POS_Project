@@ -7,12 +7,12 @@
     <title>jaiheng-pos</title>
 
     <!-- boostrap -->
-    <link rel="stylesheet" href="public/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
 
     <!-- css -->
-    <link rel="stylesheet" href="public/css/main.css">
-    <link rel="stylesheet" href="public/css/cuctom.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cuctom.css">
     
     <!-- js -->
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/js/bootstrap.js">
