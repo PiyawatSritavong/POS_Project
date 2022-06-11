@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jaiheng-pos</title>
-
-    <link rel="stylesheet" href="../../../public/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../public/bootstrap-5.0.2-dist/js/bootstrap.js">
-    <script src="../../../public/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="../../../public/bootstrap-5.0.2-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../../../public/css/style.css">
-    <link rel="stylesheet" href="../../../public/fontawesome-free-6.1.1-web/css/all.min.css">
-    
-
-</head>
-<body>
+<?php include '../../../public/nav-bar.php';?>
     <center>
 		<div class="fs-1"> EDIT PRODUCT</div>
 	</center>
@@ -102,5 +84,4 @@
                     </a>
                 </div>
             </form>
-</body>
-</html>
+<?php include '../../../public/footer.php';?>
