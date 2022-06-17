@@ -11,7 +11,7 @@
 </head>
 <body>
     <center>
-       <form >
+       <form class="form-login">
            <div >
                <img src="../../public/uplode/หลังขาว.png" class="img">
            </div>
