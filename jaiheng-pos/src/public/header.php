@@ -26,10 +26,12 @@
     
     <script src="../../public/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
     <script src="../../public/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+    
     <!-- js -->
     <!-- <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script> -->
-
+    
     <!-- fontawesome -->
     <!-- <link rel="stylesheet" href="/public/fontawesome-free-6.1.1-web/css/all.css"> -->
 </head>

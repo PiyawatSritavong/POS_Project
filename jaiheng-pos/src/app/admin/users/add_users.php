@@ -15,9 +15,9 @@
                     <input type="text" class="form-control" id="inputEmail4">
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                        <button name="login_Sale" class="btn btn-link m-3" style="width: 200px;">
-                            <span>อัพโหลดรูป</span>
-                        </button>
+                    <button name="login_Sale" class="btn btn-link m-3" style="width: 200px;">
+                        <span>อัพโหลดรูป</span>
+                    </button>
                 </div>
                 <div class="col-md-6">
                     <label for="inputEmail" class="form-label">เบอร์โทร</label>
