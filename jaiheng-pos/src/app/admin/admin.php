@@ -85,7 +85,7 @@
                                 <th scope="col">role</th>
                                 <th scope="col">gender</th>
                                 <th scope="col">
-                                    <a href="http://localhost/pos/jaiheng-pos/src/app/admin/users/add_users.php">
+                                    <a href="http://localhost/1421-Project/jaiheng-pos/src/app/admin/users/add_users.php">
                                         <button class="btn btn-primary btn-sm"> Add new</button>
                                     </a>
                                 </th>
@@ -105,7 +105,7 @@
                                 <td><?php echo $objResult["role"]; ?></td>
                                 <td><?php echo $objResult["gender"]; ?></td>
                                 <td>
-                                    <a href="http://localhost/pos/jaiheng-pos/src/app/admin/users/edit_users.php">
+                                    <a href="http://localhost/1421-Project/jaiheng-pos/src/app/admin/users/edit_users.php">
                                         <button class="btn btn-success btn-sm">Edut</button>
                                     </a>
                                     <a href="#">
@@ -149,7 +149,7 @@
                                 <th scope="col">comments</th>
                                 <th scope="col">data</th>
                                 <th scope="col">
-                                    <a href="http://localhost/pos/jaiheng-pos/src/app/admin/product/add_product.php">
+                                    <a href="http://localhost/1421-Project/jaiheng-pos/src/app/admin/product/add_product.php">
                                         <button class="btn btn-primary btn-sm"> Add new</button>
                                     </a>
                                 </th>
@@ -171,7 +171,7 @@
                                 <td><?php echo $objResult["comments"]; ?></td>
                                 <td><?php echo $objResult["date_time"]; ?></td>
                                 <td>
-                                    <a href="http://localhost/pos/jaiheng-pos/src/app/admin/product/edit_product.php">
+                                    <a href="http://localhost/1421-Project/jaiheng-pos/src/app/admin/product/edit_product.php">
                                         <button class="btn btn-success btn-sm">Edut</button>
                                     </a>
                                     <a href="#">
@@ -237,7 +237,7 @@
                 <!-- bar code table -->
                 <div class="tab-pane fade m-5" id="v-pills-barcode" role="tabpanel" aria-labelledby="v-pills-barcode-tab">
                     <h2 class="text-center">BARCODE GENERATOR</h2>
-                    <form class="form-horizontal" method="post" action="http://localhost/pos/jaiheng-pos/src/app/admin/barcode/barcode.php" target="_blank">
+                    <form class="form-horizontal" method="post" action="http://localhost/1421-Project/jaiheng-pos/src/app/admin/barcode/barcode.php" target="_blank">
                         <div class="mt-5">
                             <label for="product_id">Price:</label>
                             <input autocomplete="OFF" type="text" class="form-control" id="product_id" name="product_id">

@@ -86,9 +86,7 @@ i {
   }
   
   .bt-index {
-    margin-top: 50px;
-    margin-right: 75px;
-    margin-left: 75px;
+    margin: 50px 20px 0 0;
     width: 325.18px;
     height: 162.59px;
     padding: 50px;
@@ -98,33 +96,15 @@ i {
     background: #F2BA44;
     border: none;
     border-radius: 30px;
-  }
-  
-  .bt-index span {
     cursor: pointer;
-    display: inline-block;
     position: relative;
     transition: 0.5s;
   }
-  
-  .bt-index span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .bt-index:hover span {
-    padding-right: 25px;
-  }
-  
-  .bt-index:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-  
+    
+.bt-index:hover {
+  padding-right: 25px;
+}
+    
 .form-index {
   width: 700px;
   height: 430px;

@@ -1,4 +1,4 @@
-<?php include '../../public/nav-bar.php';?>
+<?php include '../../public/nav-pos.php';?>
 
 <div class="container-fluid">
     <div class="row">
