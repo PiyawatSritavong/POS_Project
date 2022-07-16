@@ -6,7 +6,7 @@ Created by Mr.Earn SURIYACHAY | ComSci | KMUTNB | Bangkok | Apr 2018 */ ?>
 $servername = 'localhost';
 $username = 'root';
 $password = '';
-$dbname = 'DB_pos';
+$dbname = 'barcode';
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
