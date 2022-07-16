@@ -24,9 +24,21 @@
                         <option value=อื่นๆ>อื่นๆ</option>
                     </select>
                 </div>
+<<<<<<< HEAD
                 <div class="col-md-8">
                     <label  class="form-label">ลิงค์รูปภาพ</label>
                     <input name="file" type="text" class="form-control" >
+=======
+                <div style="display: blog; margin-left: 440px; margin-right: 50px; margin-top: -145px;">
+                    <div id="imgControl" class="d-none" style="width: 200px;">
+                       <img id="imgUpload" class="img-fluid my-7" style="display: blog; margin-left: 50px; margin-right: 0px; margin-top: -20px;">
+                    </div> 
+                     <div >
+                         <button  class="btn btn-link m-3" style="width: 300px;">
+                             <input type="file" class="form-control" id="file" name="file" onchange="readURL(this)" required>               
+                         </button>   
+                     </div>
+>>>>>>> cabc4cbd362a965eee14c96865a31d9e84f81a82
                 </div>
                 <div class="col-md-6">
                     <label  class="form-label">ชื่อ-นามสกุล</label>
@@ -77,5 +89,22 @@
                     <br>
                 </div>
             </form>
+<<<<<<< HEAD
     
+=======
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function readURL(input){
+            if(input.files[0]){
+                let reader = new FileReader();
+                document.querySelector('#imgControl').classList.replace("d-none", "d-block");
+                reader.onload = function (e) {
+                    let element = document.querySelector('#imgUpload');
+                    element.setAttribute("src", e.target.result);
+                }  
+                reader.readAsDataURL(input.files[0]);
+            }         
+        }
+    </script>
+>>>>>>> cabc4cbd362a965eee14c96865a31d9e84f81a82
 <?php include '../../../public/footer.php';?>

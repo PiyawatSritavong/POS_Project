@@ -35,6 +35,7 @@
                     <label  class="form-label">ประเภท</label>
                     <input name="type" class="form-control" value="<?php echo $objResult["type"]; ?>">
                 </div>
+<<<<<<< HEAD
                 <div class="col-md-2">
                     <label  class="form-label">จำนวน</label>
                     <input name="qty" class="form-control" value="<?php echo $objResult["qty"]; ?>">
@@ -44,6 +45,20 @@
                     <input name="file" type="text" class="form-control" value="<?php echo $objResult["file"]; ?>" >
                 </div>
                 <div class="col-md-6">
+=======
+                <div style="display: blog; margin-left: 440px; margin-right: 50px; margin-top: -145px;">
+                    <div id="imgControl" class="d-none" style="width: 200px;">
+                       <img id="imgUpload" class="img-fluid my-7" style="display: blog; margin-left: 50px; margin-right: 0px; margin-top: -20px;">
+                    </div> 
+                     <div >
+                        
+                         <button  class="btn btn-link m-3" style="width: 300px;">
+                             <input type="file" class="form-control" id="file" name="file" onchange="readURL(this)" required>               
+                         </button>   
+                     </div>
+                </div>
+                <div class="col-md-6">
+>>>>>>> cabc4cbd362a965eee14c96865a31d9e84f81a82
                 <label  name="" class="form-label">ลักษณะสินค้า</label>
                     <input name="brand" class="form-control" value="<?php echo $objResult["comments"]; ?>">
                 </div>
@@ -52,7 +67,11 @@
                     <input name="retail_price" class="form-control" value="<?php echo $objResult["retail_price"]; ?>">
                 </div>
                 <div class="col-md-3">
+<<<<<<< HEAD
                     <label  class="form-label">ราคาส่ง</label>
+=======
+                    <label  class="form-label">ราคา่ส่ง</label>
+>>>>>>> cabc4cbd362a965eee14c96865a31d9e84f81a82
                     <input name="wholesale_price" class="form-control" value="<?php echo $objResult["wholesale_price"]; ?>">
                 </div>
                 
@@ -80,5 +99,21 @@
                      </a>
                 </div>
             </form>
+<<<<<<< HEAD
             
+=======
+            <script>
+            function readURL(input){
+                if(input.files[0]){
+                    let reader = new FileReader();
+                    document.querySelector('#imgControl').classList.replace("d-none", "d-block");
+                    reader.onload = function (e) {
+                        let element = document.querySelector('#imgUpload');
+                        element.setAttribute("src", e.target.result);
+                    }  
+                    reader.readAsDataURL(input.files[0]);
+                }         
+            }
+            </script>
+>>>>>>> cabc4cbd362a965eee14c96865a31d9e84f81a82
 <?php include '../../../public/footer.php';?>

@@ -97,7 +97,11 @@
                             while ($objResult = mysqli_fetch_array($objQuery)) {
                             ?>
                             <tr>
+<<<<<<< HEAD
                                 <td><img src="<?php echo $objResult["file"]; ?>" alt="" style="width: 80px;"></td>
+=======
+                                <td><img src="users/uploads/<?php echo $objResult["file"]; ?>" alt="" style="width: 200px;"></td>
+>>>>>>> cabc4cbd362a965eee14c96865a31d9e84f81a82
                                 <td><?php echo $objResult["users_id"]; ?></td>
                                 <td><?php echo $objResult["gender"]; ?></td>
                                 <td><?php echo $objResult["usersname"]; ?></td>
@@ -141,10 +145,16 @@
                             <tr>
                                 <th scope="col">ID</th>
                                 <th scope="col">ชื่อ</th>
+<<<<<<< HEAD
                                 <th scope="col">จำนวน</th>
                                 <th scope="col">รายละเอียด</th>
                                 <th scope="col">ราคาปรีก</th>
                                 <th scope="col">ราคาส่ง</th>
+=======
+                                <th scope="col">รายละเอียด</th>
+                                <th scope="col">ราคาปรีก</th>
+                                <th scope="col">ราคา่ส่ง</th>
+>>>>>>> cabc4cbd362a965eee14c96865a31d9e84f81a82
                                 <th scope="col">รูป</th>
                                 <th scope="col">บาร์โค้ด</th>
                                 <th scope="col">หมายเหตุ</th>
@@ -165,6 +175,7 @@
                             <tr>
                                 <td><?php echo $objResult["products_id"]; ?></td>
                                 <td><?php echo $objResult["products_name"]; ?></td>
+<<<<<<< HEAD
                                 <td><?php echo $objResult["qty"]; ?></td>
                                 <td><?php echo $objResult["type"]; ?></td>
                                 <td><?php echo $objResult["retail_price"]; ?></td>
@@ -175,6 +186,16 @@
       
                                 <td>
                                     <!-- <img src="../../public/uplode/150-1504562_warning-vectors-and-icons-icon-alert.png" style="width: 25px;"> -->
+=======
+                                <td><?php echo $objResult["type"]; ?></td>
+                                <td><?php echo $objResult["retail_price"]; ?></td>
+                                <td><?php echo $objResult["wholesale_price"]; ?></td>
+                                <td><img src="product/uploads/<?php echo $objResult["file"]; ?>" alt="" style="width: 200px;"></td>
+                                <td><?php echo $objResult["barcode"]; ?></td>
+                                <td><?php echo $objResult["comments"]; ?></td>
+                                
+                                <td>
+>>>>>>> cabc4cbd362a965eee14c96865a31d9e84f81a82
                                     <a href="product/edit_product.php?products_id=<?php echo $objResult["products_id"]; ?>">
                                         <button class="btn btn-success btn-sm">Edit</button>
                                     </a>
