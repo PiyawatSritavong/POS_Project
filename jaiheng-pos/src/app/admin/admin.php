@@ -77,15 +77,15 @@
                     <table class="table table-hover">
                         <thead>
                             <tr>
+                                <th scope="col">รูป</th>
                                 <th scope="col">ID</th>
-                                <th scope="col">name</th>
-                                <th scope="col">email</th>
-                                <th scope="col">password</th>
-                                <th scope="col">image</th>
-                                <th scope="col">role</th>
-                                <th scope="col">gender</th>
+                                <th scope="col">เพศ</th>
+                                <th scope="col">ชื่อ-นามสกุล</th>
+                                <th scope="col">ตำแหน่ง</th>
+                                <th scope="col">อีเมลล์</th>
+                                <th scope="col">จังหวัด</th>
                                 <th scope="col">
-                                    <a href="http://localhost/1421-Project/jaiheng-pos/src/app/admin/users/add_users.php">
+                                    <a href="http://localhost/1421-project/jaiheng-pos/src/app/admin/users/add_users.php">
                                         <button class="btn btn-primary btn-sm"> Add new</button>
                                     </a>
                                 </th>
@@ -97,18 +97,18 @@
                             while ($objResult = mysqli_fetch_array($objQuery)) {
                             ?>
                             <tr>
+                                <td><img src="<?php echo $objResult["file"]; ?>" alt="" style="width: 80px;"></td>
                                 <td><?php echo $objResult["users_id"]; ?></td>
-                                <td><?php echo $objResult["usersname"]; ?></td>
-                                <td><?php echo $objResult["email"]; ?></td>
-                                <td><?php echo $objResult["password"]; ?></td>
-                                <td><?php echo $objResult["image"]; ?></td>
-                                <td><?php echo $objResult["role"]; ?></td>
                                 <td><?php echo $objResult["gender"]; ?></td>
+                                <td><?php echo $objResult["usersname"]; ?></td>
+                                <td><?php echo $objResult["role"]; ?></td>
+                                <td><?php echo $objResult["email"]; ?></td>
+                                <td><?php echo $objResult["province"]; ?></td>
                                 <td>
-                                    <a href="http://localhost/1421-Project/jaiheng-pos/src/app/admin/users/edit_users.php">
-                                        <button class="btn btn-success btn-sm">Edut</button>
+                                    <a href="users/edit_users.php?users_id=<?php echo $objResult["users_id"]; ?>">
+                                        <button class="btn btn-success btn-sm">Edit</button>
                                     </a>
-                                    <a href="#">
+                                    <a href="deletedatausers.php?users_id=<?php echo $objResult["users_id"]; ?>">
                                         <button class="btn btn-danger btn-sm"> Delete</button>
                                     </a>
                                 </td>
@@ -140,14 +140,15 @@
                         <thead>
                             <tr>
                                 <th scope="col">ID</th>
-                                <th scope="col">name</th>
-                                <th scope="col">details</th>
-                                <th scope="col">qty</th>
-                                <th scope="col">price</th>
-                                <th scope="col">image</th>
-                                <th scope="col">size</th>
-                                <th scope="col">comments</th>
-                                <th scope="col">data</th>
+                                <th scope="col">ชื่อ</th>
+                                <th scope="col">จำนวน</th>
+                                <th scope="col">รายละเอียด</th>
+                                <th scope="col">ราคาปรีก</th>
+                                <th scope="col">ราคาส่ง</th>
+                                <th scope="col">รูป</th>
+                                <th scope="col">บาร์โค้ด</th>
+                                <th scope="col">หมายเหตุ</th>
+                                
                                 <th scope="col">
                                     <a href="http://localhost/1421-Project/jaiheng-pos/src/app/admin/product/add_product.php">
                                         <button class="btn btn-primary btn-sm"> Add new</button>
@@ -160,26 +161,34 @@
                             $i = 1;
                             while ($objResult = mysqli_fetch_array($objQuery)) {
                             ?>
+
                             <tr>
                                 <td><?php echo $objResult["products_id"]; ?></td>
                                 <td><?php echo $objResult["products_name"]; ?></td>
-                                <td><?php echo $objResult["details"]; ?></td>
                                 <td><?php echo $objResult["qty"]; ?></td>
-                                <td><?php echo $objResult["price"]; ?></td>
-                                <td><?php echo $objResult["image"]; ?></td>
-                                <td><?php echo $objResult["size"]; ?></td>
+                                <td><?php echo $objResult["type"]; ?></td>
+                                <td><?php echo $objResult["retail_price"]; ?></td>
+                                <td><?php echo $objResult["wholesale_price"]; ?></td>
+                                <td><img src="<?php echo $objResult["file"]; ?>" alt="" style="width: 80px;"></td>
+                                <td><?php echo $objResult["barcode"]; ?></td>
                                 <td><?php echo $objResult["comments"]; ?></td>
-                                <td><?php echo $objResult["date_time"]; ?></td>
+      
                                 <td>
-                                    <a href="http://localhost/1421-Project/jaiheng-pos/src/app/admin/product/edit_product.php">
-                                        <button class="btn btn-success btn-sm">Edut</button>
+                                    <!-- <img src="../../public/uplode/150-1504562_warning-vectors-and-icons-icon-alert.png" style="width: 25px;"> -->
+                                    <a href="product/edit_product.php?products_id=<?php echo $objResult["products_id"]; ?>">
+                                        <button class="btn btn-success btn-sm">Edit</button>
                                     </a>
-                                    <a href="#">
+                                    <a href="deletedataproduct.php?products_id=<?php echo $objResult["products_id"]; ?>">
                                         <button class="btn btn-danger btn-sm"> Delete</button>
                                     </a>
-                                </td>
-                                </td>
+                                <?php           
                                 
+                                 if ($objResult["qty"]<=10 ) 
+                                 {
+                                    echo '<img src="2.png" style="width: 30px;" />';
+                                    } 
+                                ?>
+                                </td>  
                             </tr>
                             <?php
                                 $i++;
@@ -238,6 +247,7 @@
                 <div class="tab-pane fade m-5" id="v-pills-barcode" role="tabpanel" aria-labelledby="v-pills-barcode-tab">
                     <h2 class="text-center">BARCODE GENERATOR</h2>
                     <form class="form-horizontal" method="post" action="http://localhost/1421-Project/jaiheng-pos/src/app/admin/barcode/barcode.php" target="_blank">
+                        
                         <div class="mt-5">
                             <label for="product_id">Price:</label>
                             <input autocomplete="OFF" type="text" class="form-control" id="product_id" name="product_id">

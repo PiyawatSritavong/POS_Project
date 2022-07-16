@@ -2,81 +2,63 @@
     <center>
 		<div class="fs-1"> ADD PRODUCT</div>
 	</center>
-            <form class="row g-3 w-50 border mt-4" style="display: blog; margin-left: auto; margin-right: auto;">
+            <form action="insertdataproduct.php" method="post" name="products" enctype="multipart/form-data" class="row g-3 w-50 border mt-4" style="display: blog; margin-left: auto; margin-right: auto;">
                 
-            <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">ลักษณะสินค้า</label>
-                </div>
                 
                 <div class="col-md-6">
-                    <label for="inputEmail" class="form-label">ชื่อสินค้า</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                    
+                    <label  class="form-label">ชื่อสินค้า</label>
+                    <input name="products_name" class="form-control" >
+                </div>                   
                 <div class="col-md-6 " style="text-align: center;">
                 <i class="fa-solid fa-cart-arrow-down fa-5x"></i>
                 </div>
+                <div class="col-md-6">
+                    <label  class="form-label">ประเภท</label>
+                    <input name="type" class="form-control" >
+                </div>
+                <div class="col-md-2">
+                    <label  class="form-label">จำนวน</label>
+                    <input name="qty" class="form-control" >
                 </div>
                 <div class="col-md-6">
-                    <label for="inputEmail" class="form-label">ประเภท</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <label  class="form-label">ลิงค์รูปภาพ</label>
+                    <input name="file" type="text" class="form-control" >
                 </div>
-                <button class="col-md-6 btn btn-link">
-                    <span>อัพโหลดรูป</span>
-                </button>
                 <div class="col-md-6">
-                    <label for="inputEmail" class="form-label">ยี่ห้อ</label>
-                    <input type="text" class="form-control" id="inputEmail4">
+                <label  name="" class="form-label">ลักษณะสินค้า</label>
+                    <input name="brand" class="form-control" >
                 </div>
                 <div class="col-md-3">
-                    <label for="inputEmail4" class="form-label">น้ำหนัก</label>
-                    <input type="text" class="form-control" id="inputEmail4">
+                    <label  class="form-label">ราคาปรีก</label>
+                    <input name="retail price" class="form-control" >
                 </div>
                 <div class="col-md-3">
-                    <label for="" class="form-label">ความสูง</label>
-                    <input type="text" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-md-3">
-                    <label for="inputCity" class="form-label">ความยาว</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <label  class="form-label">ราคาส่ง</label>
+                    <input name="whoesale price" class="form-control" >
                 </div>
                 
                 <div class="col-md-3">
-                    <label for="inputEmail4" class="form-label">ความหนา</label>
-                    <input type="text" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-12">
-                    <label for="inputEmail4" class="form-label">ลักษณะสินค้า</label>
+                    <label  class="form-label">บาร์โค้ด</label>
+                    <input name="barcode" class="form-control" >
                 </div>
                 <div class="col-md-3">
-                    <label for="" class="form-label">ราคาปรีก</label>
-                    <input type="text" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-md-3">
-                    <label for="inputCity" class="form-label">ราคา่ส่ง</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <label  class="form-label">หมายเหตุ</label>
+                    <input name="comments" class="form-control" >
                 </div>
                 
-                <div class="col-md-3">
-                    <label for="inputEmail4" class="form-label">บาร์โค้ด</label>
-                    <input type="text" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-3">
-                    <label for="" class="form-label">หมายเหตุ</label>
-                    <input type="text" class="form-control" id="inputPassword4">
-                </div>
+                
                 
                 <div class="col-12 d-flex justify-content-center">
-                    <a href="../../home.php">
-                        <button name="login_Sale" class="btn btn-secondary m-3" style="width: 300px;">
-                            <span>ยกเลิก</span>
+                    <a>
+                        <a href="http://localhost/1421-project/jaiheng-pos/src/app/admin/admin.php">
+                        <input name="login_Sale" VALUE="กลับ" class="btn btn-secondary m-3" style="width: 300px;">       
+                    </a> 
+                    <a>
+                        <button name="submit" class="btn btn-primary m-3" style="width: 300px;">
+                            <span input type="submit" name="submit" value="Insert Data">บันทึก</span>
                         </button>
-                    </a>
-                    <a href="../../home.php">
-                        <button name="login_Sale" class="btn btn-primary m-3" style="width: 300px;">
-                            <span>บันทึก</span>
-                        </button>
-                    </a>
+                     </a>
                 </div>
             </form>
+            
 <?php include '../../../public/footer.php';?>
